@@ -105,6 +105,10 @@ input:focus {
     color: white;
 }
 
+input:invalid {
+    border-color: red;
+}
+
 input[type=submit] {
 
     border: none;
