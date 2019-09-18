@@ -28,6 +28,7 @@ function renderForm($firstname, $lastname, $email, $password, $c_password, $erro
 					{
 					echo '<div align="center" style="color: yellow;">'.$error.'</div>';
 					}
+					if(isset($_GET['msg'])) echo $_GET['msg'];
 				?>          
                 <label for="firstname">First Name</label>
                 <input type="text" name="firstname" pattern="[A-Za-z].{3,}" title="First name should contain Three (3) or more letters!" id="" value="<?php echo $firstname;?>">
@@ -105,8 +106,8 @@ if (isset($_POST['submit']))
 	mysqli_query ($connection, "INSERT $table_name SET firstname = '$firstname', lastname= '$lastname', email = '$email', password = '$password'") or die ("Unable to update database.");
 	
 	//once updated, redirect back to the view page
-	header("Location:index.php");		
-
+	$msg="Sign up was successful";
+	header("Location:index.php?msg=".$msg);
 }
 else //if the form hasn't been submitted, get the data from the db and display the form
 {
