@@ -1,6 +1,6 @@
 # TeamMavins
 
-Hosted project URL [Team Mavin](mavins.findakit.com)
+Hosted project URL www.mavins.findakit.com
 
 Lucid blog posts
 
