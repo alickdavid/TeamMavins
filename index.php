@@ -29,7 +29,7 @@ function renderForm($email, $password, $error)
 				?>          
             <label for="email">Email</label>
                 <input type="email" name="email" id="">
-                <label for="email">Password</label>
+                <label for="password">Password</label>
                 <input type="password" name="password" id="">
                 <input type="submit" name="submit" value="Log In">
                 <p>  <a href="signup.php"> Click here to create account </a></p>
