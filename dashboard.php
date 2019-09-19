@@ -51,8 +51,6 @@
             <h3>About Me</h3>
             <p>Team MAVIN<br>
             HNG Intern<br>
-            
-
             </p>
         </div>
         <div class="groups">
@@ -125,7 +123,7 @@
         
     </div>
     <footer>
-        <p> Developed and maintained with by Team mavin &copy; 2019 </p>
+        <p> Developed and maintained with  by Team mavin &copy; 2019 </p>
     </footer>
 </body>
 </html>
