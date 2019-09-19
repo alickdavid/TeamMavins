@@ -49,7 +49,11 @@
             <h3> <?php echo "Welcome, " . $firstname . " " . $lastname; ?></h3>
             <div class="img"></div>
             <h3>About Me</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem atque ipsa adipisci harum? Iusto saepe tempore praesentium ad quae. Nesciunt adipisci voluptas facere ex excepturi modi porro distinctio eaque odit?</p>
+            <p>Team MAVIN<br>
+            HNG Intern<br>
+            
+
+            </p>
         </div>
         <div class="groups">
                 
@@ -67,13 +71,18 @@
            <div class="timeline">
                 <section>
                     
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem accusamus, repudiandae tenetur ipsum, inventore culpa quibusdam at suscipit dolorum doloribus! Praesentium accusantium corporis officia facilis, in vitae cum sit.</p>
+                    <p><strong>Team MAVIN</strong><br>
+                    None of us, including me, ever do great things. 
+                    But we can all did small things, with great love, 
+                    and together we can did something wonderful</p>
                     <span><i class="fa fa-share-alt"></i>6</span>
                     <span><i class="fa fa-comment"></i> 15</span>
                     <span><i class="fa fa-thumbs-up"> 8</i></span>
                 </section>
                 <section>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem accusamus, repudiandae tenetur ipsum, inventore culpa quibusdam at suscipit dolorum doloribus! Praesentium accusantium corporis officia facilis, in vitae cum sit.</p>
+                        <p><strong>Unity</strong><br>
+                        Any group of people that can be split 
+                        into two rival factions gets much weaker than the sum of the two parts.</p>
                         <span><i class="fa fa-share-alt"></i>9 </span>
                     <span><i class="fa fa-comment"></i> 12</span>
                     <span><i class="fa fa-thumbs-up"></i> 9</span>
@@ -116,7 +125,7 @@
         
     </div>
     <footer>
-        <p> Developed and maintained with  by Team mavin &copy; 2019 </p>
+        <p> Developed and maintained with by Team mavin &copy; 2019 </p>
     </footer>
 </body>
 </html>
