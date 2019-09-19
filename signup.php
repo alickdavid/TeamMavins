@@ -28,19 +28,18 @@ function renderForm($firstname, $lastname, $email, $password, $c_password, $erro
 					{
 					echo '<div align="center" style="color: yellow;">'.$error.'</div>';
 					}
-				?>          
+				?>        
                 <label for="firstname">First Name</label>
-                <input type="text" name="firstname" id="" value="<?php echo $firstname;?>">
+                <input type="text" name="firstname" pattern="[A-Za-z].{3,}" title="First name should contain Three (3) or more letters!" id="" value="<?php echo $firstname;?>">
                 <label for="lastname">Last Name</label>
-                <input type="text" name="lastname" id="" value="<?php echo $lastname;?>">
+                <input type="text" name="lastname" pattern="[A-Za-z].{3,}" title="Last name should contain Three (3) or more letters!" id="" value="<?php echo $lastname;?>">
                  <label for="email">Email</label>
-                <input type="email" name="email" id="" value="<?php echo $email;?>">
+                <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="" value="<?php echo $email;?>">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="" value="<?php echo $password;?>">
+                <input type="password" name="password" pattern=".{8,}" title="Password should be Eight (8) or more characters" id="" value="<?php echo $password;?>">
                <label for="password">Confirm Password</label>
-                <input type="password" name="c_password" id="" value="<?php echo $c_password;?>">
+                <input type="password" name="c_password" pattern=".{8,}" title="Password should be Eight (8) or more characters" id="" value="<?php echo $c_password;?>">
                 <input type="submit" name="submit" value="Sign Up">                
-
             </form>
         </div>
     </div>
