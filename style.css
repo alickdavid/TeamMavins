@@ -25,7 +25,7 @@ body {
     background: linear-gradient(rgba(240, 61, 86, 0.4), rgba(67, 100, 13, 0.4)), url(../images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 620px;
+    height: 800px;
     align-items: center;
 }
 
@@ -377,4 +377,25 @@ footer{
 .container {
     width: 980px;
 }
+
+/* dashboard configuration */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 990px;
 }
+
+.dashboard {
+    justify-content: center;
+    width: 970px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 990px;
+}
+} 
+/* dashboard configuration ends here */
+
