@@ -18,13 +18,13 @@
                 
                 
                 <label for="lastname"> Name</label>
-                <input type="text" name="lastname" id="" placeholder="Leelah French">
+                <input type="text" name="lastname" id="" placeholder="Leelah French" required>
                  <label for="email">Email</label>
-                <input type="email" name="email" id="" placeholder="teammavin@startng.com">
+                <input type="email" name="email" id="" pattern="[a-zA-Z0-9]{3,}@[a-z]{3,}[.]{1}[a-z]{2,}" title="Please enter a valid email address" placeholder="teammavin@startng.com" required>
                 <label for="password">Password</label>
-                <input type="password" name="password" id="" placeholder="password">
+                <input type="password" name="password" id="" pattern="[a-zA-Z0-9]{8,}" title="password must be 8 characters or more" placeholder="password" required>
                <label for="password">Confirm Password</label>
-                <input type="password" name="password" id="" placeholder="confirm password">
+                <input type="password" name="password" id="" pattern="[a-zA-Z0-9]{8,}" title="password must be 8 characters or more" placeholder="confirm password" required>
                 <input type="submit" value="Sign Up">
                 
 
