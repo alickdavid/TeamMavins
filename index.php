@@ -29,9 +29,9 @@ function renderForm($email, $password, $error)
 				?>          
             <label for="email">Email</label>
                 <input type="email" name="email" id="">
-                <label for="email">Password</label>
+                <label for="password">Password</label>
                 <input type="password" name="password" id="">
-                <input type="submit" name="submit" value="Join Now">
+                <input type="submit" name="submit" value="Log In">
                 <p>  <a href="signup.php"> Click here to create account </a></p>
 
             </form>
@@ -76,9 +76,13 @@ if (isset($_POST['submit']))
 	if ($count_check == 1){
 		//register $firstname, $lastname, $email and redirect to file dashboard page"
 		session_start();
+		$_SESSION['user_id'] = $row["id"];
+
+		
 		$_SESSION['firstname'] = $row['firstname'];
 		$_SESSION['lastname'] = $row["lastname"];
 		$_SESSION['email'] = $row["email"];
+
 		//once updated, redirect back to the view page
 		header("Location:dashboard.php");		
 		exit;
