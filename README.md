@@ -10,5 +10,4 @@ Some little addition were included, which are as follows:
 Here are links relating to the task:
 - Hosted Project URL http://mavins.findakit.com/
 - Lucid Article:
-- From forming the team to completing the task https://lucid.blog/olaonipekunolaitan/post/team-mavin-hng-stage-3-task-85d
 - Conversion of the UI Design to HTML codes https://lucid.blog/alaketuolamilekan02/post/team-mavin-ui-conversion-to-code-45f
