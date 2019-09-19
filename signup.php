@@ -39,7 +39,10 @@ function renderForm($firstname, $lastname, $email, $password, $c_password, $erro
                 <input type="password" name="password" pattern=".{8,}" title="Password should be Eight (8) or more characters" id="" value="<?php echo $password;?>">
                <label for="password">Confirm Password</label>
                 <input type="password" name="c_password" pattern=".{8,}" title="Password should be Eight (8) or more characters" id="" value="<?php echo $c_password;?>">
-                <input type="submit" name="submit" value="Sign Up">                
+                <input type="submit" name="submit" value="Sign Up">       
+		    <p>  <a href="index.php"> Signin instead </a></p>
+
+
             </form>
         </div>
     </div>
@@ -104,7 +107,7 @@ if (isset($_POST['submit']))
 	mysqli_query ($connection, "INSERT $table_name SET firstname = '$firstname', lastname= '$lastname', email = '$email', password = '$password'") or die ("Unable to update database.");
 	
 	//generate successful message
-	$error = 'SIGNUP SUCCESSFUL <br/> <a href="index.php">Click here</a> to Sign-in';
+	$error = 'SIGNUP SUCCESSFUL';
 	//if either field is blank, display the form again
 	renderForm('', '', '', '', '', $error);
 	exit;
