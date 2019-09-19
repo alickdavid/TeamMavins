@@ -71,8 +71,8 @@
                     
                     <p><strong>Team MAVIN</strong><br>
                     None of us, including me, ever do great things. 
-                    But we can all did small things, with great love, 
-                    and together we can did something wonderful</p>
+                    But we all did small things, with great love, 
+                    and together did something wonderful</p>
                     <span><i class="fa fa-share-alt"></i>6</span>
                     <span><i class="fa fa-comment"></i> 15</span>
                     <span><i class="fa fa-thumbs-up"> 8</i></span>
