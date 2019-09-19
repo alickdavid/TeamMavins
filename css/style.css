@@ -400,3 +400,20 @@ footer{
 }
 
 
+@media only screen and (max-width: 768px) {
+     .inputs {
+   width: 80%;
+   margin: 50px auto;
+    }
+    .intro {
+    display:none;
+    }
+    .container  {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    }
+   
+}
+
