@@ -40,7 +40,7 @@ function renderForm($firstname, $lastname, $email, $password, $c_password, $erro
                <label for="password">Confirm Password</label>
                 <input type="password" name="c_password" pattern=".{8,}" title="Password should be Eight (8) or more characters" id="" value="<?php echo $c_password;?>">
                 <input type="submit" name="submit" value="Sign Up">       
-		    <p>  <a href="index.php"> Signin instead </a></p>
+		    <p>  <a href="index.php"> Sign in instead </a></p>
 
 
             </form>
