@@ -51,8 +51,6 @@
             <h3>About Me</h3>
             <p>Team MAVIN<br>
             HNG Intern<br>
-            
-
             </p>
         </div>
         <div class="groups">
@@ -73,8 +71,8 @@
                     
                     <p><strong>Team MAVIN</strong><br>
                     None of us, including me, ever do great things. 
-                    But we can all did small things, with great love, 
-                    and together we can did something wonderful</p>
+                    But we all did small things, with great love, 
+                    and together did something wonderful</p>
                     <span><i class="fa fa-share-alt"></i>6</span>
                     <span><i class="fa fa-comment"></i> 15</span>
                     <span><i class="fa fa-thumbs-up"> 8</i></span>
@@ -125,7 +123,7 @@
         
     </div>
     <footer>
-        <p> Developed and maintained with by Team mavin &copy; 2019 </p>
+        <p> Developed and maintained with  by Team mavin &copy; 2019 </p>
     </footer>
 </body>
 </html>

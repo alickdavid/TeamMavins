@@ -22,12 +22,10 @@ body {
 .container {
     display: grid;
     grid-template-columns: 40% 40%;
-    height: 800px;
     background: linear-gradient(rgba(240, 61, 86, 0.4), rgba(67, 100, 13, 0.4)), url(../images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 620px;
-
     align-items: center
 }
 
@@ -43,22 +41,14 @@ body {
 
 .intro h1 {
     color: white;
-
-    font-family:  var(--font);
-    font-style: normal;
-    font-size: 42px;
+    font-family: var(--font);
 }
 
 form {
     background: #202027;
-
-    border-radius: 12px;
-    opacity: 0.6;
-    width: 400px;
     border-radius: 10px;
     opacity: 0.8;
     width: 350px;
-
 
     padding-top: 10px;
     padding-bottom: 10px;
@@ -103,35 +93,17 @@ input:focus {
     color: white;
 }
 
-input:invalid {
-    border-color: red;
-}
-
 input[type=submit] {
 
     border: none;
-    background: rgb(7, 65, 119);
-    border-radius: 10px;
+    background: #1762A7;
+    border-radius: 5px;
     padding: 7px;
     width: 75%;
     color: white;
     margin: 15px 40px;
     box-sizing: border-box;
     font-family: var(--font);
-
-
-    /* Responsiveness */
-}
-
-    /* Small phones to small tablets: from 481px to 768px */
-    @media only screen and (max-width: 768px) 
-    { body { font-size: 16px; } 
-    .container{ width: 80%; margin: 0 0 4% 0; }
-
-    /* Small tablet to big tablet: from 768px to 1023px */
-    @media only screen and (max-width: 1023px) 
-    { body { font-size: 18px; } 
-    .container { width: 80%; margin-left: 10%;
     transition: background .2s ease-in-out;
 }
 
@@ -143,7 +115,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background: rgb(3, 45, 83, 43, 80);
+    background: rgb(3, 45, 83)43, 80);
 
 }
 
@@ -390,6 +362,7 @@ footer{
 
 
 
+
 /* media queries */
 
 @media only screen and (max-width: 412px){
@@ -399,21 +372,4 @@ footer{
     
 }
 
-
-@media only screen and (max-width: 768px) {
-     .inputs {
-   width: 80%;
-   margin: 50px auto;
-    }
-    .intro {
-    display:none;
-    }
-    .container  {
-    display: block;
-    width: 80%;
-    margin: auto;
-    padding: 40px;
-    }
-   
 }
-
