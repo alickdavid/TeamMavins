@@ -28,8 +28,7 @@ function renderForm($firstname, $lastname, $email, $password, $c_password, $erro
 					{
 					echo '<div align="center" style="color: yellow;">'.$error.'</div>';
 					}
-					if(isset($_GET['msg'])) echo $_GET['msg'];
-				?>          
+				?>        
                 <label for="firstname">First Name</label>
                 <input type="text" name="firstname" pattern="[A-Za-z].{3,}" title="First name should contain Three (3) or more letters!" id="" value="<?php echo $firstname;?>">
                 <label for="lastname">Last Name</label>
@@ -41,7 +40,6 @@ function renderForm($firstname, $lastname, $email, $password, $c_password, $erro
                <label for="password">Confirm Password</label>
                 <input type="password" name="c_password" pattern=".{8,}" title="Password should be Eight (8) or more characters" id="" value="<?php echo $c_password;?>">
                 <input type="submit" name="submit" value="Sign Up">                
-
             </form>
         </div>
     </div>
@@ -105,9 +103,15 @@ if (isset($_POST['submit']))
 	//insert data to the database
 	mysqli_query ($connection, "INSERT $table_name SET firstname = '$firstname', lastname= '$lastname', email = '$email', password = '$password'") or die ("Unable to update database.");
 	
+	//generate successful message
+	$error = 'SIGNUP SUCCESSFUL <br/> <a href="index.php">Click here</a> to Sign-in';
+	//if either field is blank, display the form again
+	renderForm('', '', '', '', '', $error);
+	exit;
+		
 	//once updated, redirect back to the view page
-	$msg="Sign up was successful";
-	header("Location:index.php?msg=".$msg);
+	//header("Location:index.php");		
+
 }
 else //if the form hasn't been submitted, get the data from the db and display the form
 {

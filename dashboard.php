@@ -1,18 +1,24 @@
 <?php
-session_start();
+	session_start();
 
-require_once("config/db_config.php");
-   require_once("functions/userhandler.php");
-?>
-
-
+	if (!(isset($_SESSION['firstname']) && $_SESSION['firstname'] != ''))
+	{ // we don't have session at all
+		header("Location:signin.php");
+	}
+	
+	$firstname = $_SESSION['firstname'];
+	$lastname = $_SESSION['lastname'];
+	$email = $_SESSION['email'];
+	//$serialID = $_SESSION['serialno']
+?>        
+        
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Team Mavin | Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
 
      <!-- font awesome -->
@@ -28,7 +34,7 @@ require_once("config/db_config.php");
     <header>
         <a href="#" class="brand"> Team Mavin</a>
         <ul class="dropdown">
-            <li><i class="fa fa-user"></i> User</li>
+            <li><i class="fa fa-user"></i><?php echo $firstname; ?></li>
             <div class="dropContent">
                 <a href="#"><i class="fa fa-cog"></i> Edit Profile</a>
                 <a href="logout.php"><i class="fa fa-sign-out-alt"></i>Log Out</a>
@@ -40,36 +46,7 @@ require_once("config/db_config.php");
     </header>
     <div class="dashboard">
         <div class="bio">
-            <h3> Welcome  <?php 
-                
-                $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE) or die (mysqli_error());
-mysqli_select_db ($connection, DB_DATABASE) or die (mysqli_error());
-
-
-                $theUserId = userLoggedIn();
-
-                $userDetails = "SELECT * FROM users WHERE id = $theUserId";
-
-
-                $queryUser = mysqli_query($connection,$userDetails);
-
-                if (!$queryUser) {
-                    die("could not query User" .mysqli_error($connection));
-                }
-
-                //fetch the details of the log in user from the database
-
-                $fetchUser = mysqli_fetch_assoc($queryUser);
-
-                //fetch the name from the details you fetch fromthe database
-
-                $nameOfUser = $fetchUser['firstname'];
-
-                echo "$nameOfUser";
-
-            ?>
-                
-            </h3>
+            <h3> <?php echo "Welcome, " . $firstname . " " . $lastname; ?></h3>
             <div class="img"></div>
             <h3>About Me</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem atque ipsa adipisci harum? Iusto saepe tempore praesentium ad quae. Nesciunt adipisci voluptas facere ex excepturi modi porro distinctio eaque odit?</p>
